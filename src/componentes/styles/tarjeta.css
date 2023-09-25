@@ -1,0 +1,36 @@
+#showTrendSection .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    width: 200px;
+}
+
+.productOrden{
+    width: 20%;
+    border: 1px solid #618b4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 2%;
+    transition: all .5s;
+    cursor: pointer;
+    width: 150px;
+}
+
+.productOrden:hover{
+    box-shadow: 0px 1px 20px -5px;
+}
+
+.productOrden img{
+    width: 70%;
+}
+
+.productOrden img,
+.productOrden h2,
+.productOrden span{
+    margin-bottom: 3%;
+}

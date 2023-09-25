@@ -1,0 +1,28 @@
+.inicio-ws /*Navegador*/{
+    position: absolute;
+    display: inline;
+}
+.headerws/*Header ws*/{
+    height: 165px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #f0eefb, #f8eef6, #fbeff1, #fbf1ef, #f8f3ef);
+}    
+.headerws li /*Acomodar los botones*/{
+    float: left;
+    padding: 7px;
+}
+.inicio-ws li a /*Diseño de los botones*/{
+    display: block;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #292732;
+    text-decoration: none;
+}
+.inicio-ws li:hover /*Change the color of the link*/{
+    background-color: #C7BFD6;
+    border-radius: 10px;
+}
