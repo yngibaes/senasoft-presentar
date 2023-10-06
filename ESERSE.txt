@@ -1,0 +1,18 @@
+un if checkear si existe o no el correo ya registrado
+
+    database.query("SELECT email FROM signup WHERE email=?",[email],(errorresult)=>{
+    if(result.length>0){
+        alert("El email ya existe");
+        return redirect(url_for('/inicio'));
+    }
+    else database.query("INSERT INTO signup(nombre, apellido, email, passw, tele, tipo_usuario) VALUES(?,?,?,?,?,?)", [nombre, apellido, email, password, tele, tipo_usuario], 
+    (err,result)=>{
+        if(err){
+            console.log(err);
+        }else{
+            res.send(result);
+        }
+        });
+    }
+})
+                
